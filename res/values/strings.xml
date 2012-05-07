@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Auto Bluetooth</string>
+
+    <string name="edit_connection_timeout_dialog_title">Edit connection timeout</string>
+    <string name="connection_timeout_preference_summary">In seconds</string>
+    <string name="connection_timeout">Connection timeout</string>
+
+    <string name="edit_connection_retry_interval_dialog_title">Edit connection retry interval</string>
+    <string name="connection_retry_interval_preference_summary">In seconds</string>
+    <string name="connection_retry_interval">Connection retry interval</string>
+
+    <string name="on_off">On/Off</string>
+    <string name="on_off_preference_summary"></string>
+</resources>

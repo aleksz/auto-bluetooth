@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:dialogTitle="@string/edit_connection_timeout_dialog_title"
+        android:key="connection_timeout"
+        android:summary="@string/connection_timeout_preference_summary"
+        android:title="@string/connection_timeout"
+        android:defaultValue="5" />
+
+    <EditTextPreference
+        android:dialogTitle="@string/edit_connection_timeout_dialog_title"
+        android:key="connection_retry_interval"
+        android:summary="@string/connection_retry_interval_preference_summary"
+        android:title="@string/connection_retry_interval"
+        android:defaultValue="120" />
+
+    <CheckBoxPreference
+        android:key="on_off"
+        android:summary="@string/on_off_preference_summary"
+        android:title="@string/on_off"
+        android:defaultValue="false"
+        />
+
+</PreferenceScreen>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmail.at.zhuikov.aleksandr.ab"
+    android:versionCode="2"
+    android:versionName="0.1.1" >
+
+    <uses-sdk android:minSdkVersion="7" android:maxSdkVersion="10"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".AutoBluetoothApplication">
+
+        <activity android:name=".SettingsActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.EnableBluetoothService" />
+        <service android:name=".service.DisableBluetoothService" />
+        <service android:name=".service.EntryPointService" />
+        <service android:name=".service.CancelPendingIntentsService" />
+
+        <receiver android:name=".broadcast.AclConnectedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".broadcast.AclDisconnectedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".broadcast.BluetoothStateChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".broadcast.BootCompletedBroadcastReceiver">
+	        <intent-filter>
+	            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+	        </intent-filter>
+	    </receiver>
+
+    </application>
+
+</manifest>
