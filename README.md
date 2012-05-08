@@ -1,2 +1,1 @@
-auto-bluetooth
-==============
+Download it from Google play: https://play.google.com/store/apps/details?id=com.gmail.at.zhuikov.aleksandr.ab
