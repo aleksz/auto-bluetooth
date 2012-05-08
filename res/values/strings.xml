@@ -13,4 +13,6 @@
 
     <string name="on_off">On/Off</string>
     <string name="on_off_preference_summary"></string>
+
+    <string name="empty_preference">Can not set empty value</string>
 </resources>
